@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Omar Eldesouky</title>
+<meta name="description" content="Personal site of Omar Eldesouky. Investment associate, student, plane spotter. Currently in Dubai.">
+<meta property="og:title" content="Omar Eldesouky">
+<meta property="og:description" content="Holding pattern. Full site under construction.">
+<meta name="theme-color" content="#85b2d6">
+<style>
+:root {
+  --bg-top: #85b2d6;
+  --bg-bottom: #dce8f2;
+  --card-bg: #eef2f6;
+  --text: #1a1a20;
+  --muted: #5a6a7a;
+  --rule: #c4d0dc;
+  --accent: #3a5a8a;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; min-height: 100vh; }
+body {
+  background: linear-gradient(180deg, var(--bg-top) 0%, var(--bg-bottom) 100%);
+  background-attachment: fixed;
+  color: var(--text);
+  font-family: 'JetBrains Mono', ui-monospace, 'SF Mono', Menlo, Consolas, monospace;
+  font-size: 14px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transition: color 1.5s ease;
+}
+.wrap {
+  max-width: 620px;
+  margin: 0 auto;
+  padding: 56px 24px 80px;
+}
+
+.head {
+  border: 1px solid var(--rule);
+  background: var(--card-bg);
+  margin-bottom: 44px;
+  transition: background 1.5s ease, border-color 1.5s ease;
+}
+.head .band { height: 5px; background: var(--accent); transition: background 1.5s ease; }
+.head .body { padding: 16px 20px 18px; }
+.head .row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 11px;
+  color: var(--muted);
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.head h1 {
+  font-family: 'Inter', 'Helvetica Neue', system-ui, sans-serif;
+  font-weight: 500;
+  font-size: 22px;
+  margin: 0 0 6px;
+  letter-spacing: -.01em;
+}
+.head .sub { font-size: 13px; color: var(--muted); line-height: 1.55; }
+
+.live-d {
+  display: inline-block;
+  width: 6px; height: 6px;
+  border-radius: 50%;
+  background: #6fb38a;
+  margin-right: 6px;
+  vertical-align: middle;
+  animation: lp 2s infinite;
+}
+@keyframes lp { 0%,100% { opacity: 1 } 50% { opacity: .3 } }
+
+.notice {
+  font-size: 12px;
+  color: var(--muted);
+  padding: 12px 0;
+  border-top: 1px solid var(--rule);
+  border-bottom: 1px solid var(--rule);
+  margin-bottom: 36px;
+}
+
+section { margin-bottom: 36px; }
+h2 {
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 11px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+  color: var(--muted);
+  margin: 0 0 14px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--rule);
+}
+p { margin: 0 0 14px; }
+.links { list-style: none; padding: 0; margin: 0; }
+.links li {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 9px 0;
+  border-bottom: 1px solid var(--rule);
+  gap: 12px;
+}
+.links li:last-child { border-bottom: none; }
+.links a {
+  color: var(--text);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color .15s ease;
+}
+.links a:hover { border-bottom-color: var(--accent); }
+.links .meta { color: var(--muted); font-size: 12px; white-space: nowrap; }
+
+footer {
+  margin-top: 56px;
+  padding-top: 14px;
+  border-top: 1px solid var(--rule);
+  font-size: 11px;
+  color: var(--muted);
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+@media (max-width: 480px) {
+  .wrap { padding: 40px 18px 60px; }
+  .head h1 { font-size: 19px; }
+}
+</style>
+</head>
+<body>
+<main class="wrap">
+
+<div class="head">
+  <div class="band"></div>
+  <div class="body">
+    <div class="row">
+      <span>OE / personal site</span>
+      <span><span class="live-d"></span>live &middot; holding pattern</span>
+    </div>
+    <h1>Omar Eldesouky</h1>
+    <div class="sub">curious fella.</div>
+  </div>
+</div>
+
+<div class="notice">
+  Tower under construction. This is the holding pattern &mdash; the full observation deck is being built. Check back June 1st.
+</div>
+
+<section>
+  <h2>Work</h2>
+  <ul class="links">
+    <li><span>Stealth project</span><span class="meta">in stealth</span></li>
+    <li><a href="https://frontrowventures.ca" target="_blank" rel="noopener">Front Row Ventures</a><span class="meta">venture analyst</span></li>
+    <li><span>Black Tusk Student Ventures</span><span class="meta">co-president</span></li>
+    <li><span>CFAC Portfolio Management</span><span class="meta">macro analyst</span></li>
+  </ul>
+</section>
+
+<section>
+  <h2>Writing</h2>
+  <p>Not yet. The first pieces land here once the deck is open.</p>
+</section>
+
+<section>
+  <h2>Elsewhere</h2>
+  <ul class="links">
+    <li><a href="mailto:me@omareldesouky.com">email</a><span class="meta">fastest</span></li>
+    <li><a href="https://linkedin.com/in/omareldesouky" target="_blank" rel="noopener">linkedin</a><span class="meta">professional</span></li>
+    <li><a href="https://x.com/omarhastheories" target="_blank" rel="noopener">twitter</a><span class="meta">occasional</span></li>
+  </ul>
+</section>
+
+<footer>
+  <span>obs.deck v0.1 &middot; <span id="sky-mode">--</span></span>
+  <span id="local-time">--:--</span>
+</footer>
+
+</main>
+<script>
+(function() {
+  function pad(n) { return String(n).padStart(2, '0'); }
+
+  function tick() {
+    var d = new Date();
+    var el = document.getElementById('local-time');
+    if (el) el.textContent = pad(d.getHours()) + ':' + pad(d.getMinutes()) + ' local';
+  }
+
+  function updateSky() {
+    var d = new Date();
+    var h = d.getHours() + d.getMinutes() / 60;
+    var t;
+    if (h >= 22 || h < 5) {
+      t = { top: '#0a0f1f', bot: '#1a1d28', card: '#1f2230', text: '#e8e4d4', muted: '#7a7a8a', rule: '#2a2d3a', accent: '#9ac4d8', mode: 'night' };
+    } else if (h < 7) {
+      t = { top: '#2a2545', bot: '#5a3848', card: '#3a2a40', text: '#f0e8d8', muted: '#a89898', rule: '#5a4555', accent: '#e8a878', mode: 'pre-dawn' };
+    } else if (h < 10) {
+      t = { top: '#9ac0d8', bot: '#f0e8d4', card: '#fff8e8', text: '#1a1a20', muted: '#6a5a40', rule: '#d4cdb8', accent: '#3a5a8a', mode: 'morning' };
+    } else if (h < 16) {
+      t = { top: '#85b2d6', bot: '#dce8f2', card: '#eef2f6', text: '#1a1a20', muted: '#5a6a7a', rule: '#c4d0dc', accent: '#3a5a8a', mode: 'day' };
+    } else if (h < 18) {
+      t = { top: '#c89878', bot: '#f0d8a8', card: '#f8e8c8', text: '#2a1a1a', muted: '#6a4a3a', rule: '#c8a888', accent: '#7a3a30', mode: 'late afternoon' };
+    } else if (h < 20) {
+      t = { top: '#a85040', bot: '#e8a878', card: '#f4d4a8', text: '#2a1a1a', muted: '#6a4030', rule: '#d4a888', accent: '#5a2818', mode: 'golden hour' };
+    } else {
+      t = { top: '#1a2540', bot: '#3a2848', card: '#252845', text: '#e8e4d4', muted: '#8a7a8a', rule: '#3a3045', accent: '#c8a878', mode: 'evening' };
+    }
+    var s = document.documentElement.style;
+    s.setProperty('--bg-top', t.top);
+    s.setProperty('--bg-bottom', t.bot);
+    s.setProperty('--card-bg', t.card);
+    s.setProperty('--text', t.text);
+    s.setProperty('--muted', t.muted);
+    s.setProperty('--rule', t.rule);
+    s.setProperty('--accent', t.accent);
+    var m = document.getElementById('sky-mode');
+    if (m) m.textContent = t.mode;
+    var tc = document.querySelector('meta[name="theme-color"]');
+    if (tc) tc.setAttribute('content', t.top);
+  }
+
+  tick();
+  updateSky();
+  setInterval(tick, 30000);
+  setInterval(updateSky, 60000);
+})();
+</script>
+</body>
+</html>
